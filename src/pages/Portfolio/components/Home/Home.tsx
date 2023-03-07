@@ -2,10 +2,9 @@ import React from 'react'
 import { StyledContainer } from '../../../../styles/Container'
 import { iIdProps } from '../../Portfolio'
 import { Header } from './Header/Header'
-import homeImg from '../../../../assets/projeto.png'
+import homeImg from '../../../../assets/home-img.png'
 import { StyledHome } from './StyledHome'
-import contactCTA from '../../../../assets/contactCTA.png'
-import { AiOutlineSwapRight } from 'react-icons/ai'
+import { ContactPrimary } from '../../../../components/ContactCTA/ContactPrimary'
 
 export function Home({ id }: iIdProps): JSX.Element {
 	return (
@@ -32,6 +31,8 @@ export function Home({ id }: iIdProps): JSX.Element {
 					</div>
 				</div>
 			</StyledContainer>
+
+			<ContactPrimary top={'-40px'} left={'1100px'}/>
 		</StyledHome>
 	)
 }
