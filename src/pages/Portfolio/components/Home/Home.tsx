@@ -2,13 +2,36 @@ import React from 'react'
 import { StyledContainer } from '../../../../styles/Container'
 import { iIdProps } from '../../Portfolio'
 import { Header } from './Header/Header'
+import homeImg from '../../../../assets/projeto.png'
+import { StyledHome } from './StyledHome'
+import contactCTA from '../../../../assets/contactCTA.png'
+import { AiOutlineSwapRight } from 'react-icons/ai'
 
 export function Home({ id }: iIdProps): JSX.Element {
 	return (
-		<section id={id} style={{backgroundColor: 'var(--blue1)', height: '100vh'}}>
+		<StyledHome id={id}>
 			<StyledContainer>
 				<Header/>
+				<div className='flexLayout'>
+					<figure>
+						<img src={homeImg} alt="" />
+					</figure>
+					<div>
+						<h2>
+							Desenvolvedor 
+							<span>
+								Front 
+								<div>
+									<span>&#x0007B; Think, Code, Release &#x0007D;</span>
+									<span className='hyphen'></span>
+								</div>
+								End
+							</span>
+						</h2>
+						<p>Transformando códigos em soluções digitais personalizadas, a fim de atender as necessidades específicas da sua empresa e de seus clientes.</p>
+					</div>
+				</div>
 			</StyledContainer>
-		</section>
+		</StyledHome>
 	)
 }
