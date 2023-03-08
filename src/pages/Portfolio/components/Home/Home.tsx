@@ -4,7 +4,7 @@ import { iIdProps } from '../../Portfolio'
 import { Header } from './Header/Header'
 import homeImg from '../../../../assets/home-img.png'
 import { StyledHome } from './StyledHome'
-import { ContactPrimary } from '../../../../components/ContactCTA/ContactPrimary'
+import { ContactCTA } from '../../../../components/ContactCTA/ContactCTA'
 
 export function Home({ id }: iIdProps): JSX.Element {
 	return (
@@ -32,7 +32,7 @@ export function Home({ id }: iIdProps): JSX.Element {
 				</div>
 			</StyledContainer>
 
-			<ContactPrimary top={'-40px'} left={'1100px'}/>
+			<ContactCTA styleOption={'primary'} top={'-40px'} left={'1100px'}/>
 		</StyledHome>
 	)
 }
