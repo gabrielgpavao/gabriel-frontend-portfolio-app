@@ -5,7 +5,6 @@ export const StyledHome = styled.section`
 	background-image: linear-gradient(to right, #011826 0%, #000e17 100%);
 
 	.flexLayout {
-		display: flex;
 		margin-top: 50px;
 		
 		> div {

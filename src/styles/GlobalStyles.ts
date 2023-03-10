@@ -50,4 +50,8 @@ export const GlobalStyles = createGlobalStyle`
 		--orange1: #ff7a01;
 		--orange2: #ff9432;
 	}
+
+	.flexLayout {
+		display: flex;
+	}
 `
