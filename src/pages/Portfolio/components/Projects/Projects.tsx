@@ -5,7 +5,7 @@ import { iIdProps } from '../../Portfolio'
 import { ImGithub } from 'react-icons/im';
 import { FiExternalLink } from 'react-icons/fi';
 
-export function Technologies ({ id }: iIdProps): JSX.Element {
+export function Projects ({ id }: iIdProps): JSX.Element {
 	return (
 		<section id={id}>
 			<StyledContainer>

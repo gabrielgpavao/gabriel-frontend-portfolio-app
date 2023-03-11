@@ -1,7 +1,7 @@
 import React from 'react';
 import { About } from './components/About/About';
 import { Home } from './components/Home/Home';
-import { Technologies } from './components/Technologies/Technologies';
+import { Projects } from './components/Projects/Projects';
 
 export interface iIdProps {
     id: string;
@@ -12,7 +12,7 @@ export function Portfolio(): JSX.Element {
 		<>
 			<Home id={'home'}/>
 			<About id={'about'}/>
-			<Technologies id={'projects'}/>
+			<Projects id={'projects'}/>
 		</>
 	);
 }
