@@ -80,8 +80,6 @@ export const StyledAbout = styled.section`
 
 	a:hover, button:hover {
 		transition: 0.3s;
-		/* height: 55px; */
-
 		background-color: var(--orange2);
 		color: var(--blue1);
 	}

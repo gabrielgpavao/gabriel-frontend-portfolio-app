@@ -15,7 +15,7 @@ export const StyledHome = styled.section`
 		}
 	}
 	
-	div figure {
+	figure {
 		height: 380px;
 		margin-right: 50px;
 
