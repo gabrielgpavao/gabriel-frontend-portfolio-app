@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
-	padding-top: 50px;
+	padding-top: 40px;
 	min-height: 100vh;
 	background-image: url(./src/assets/aboutBg.png);
 	background-position: center;
