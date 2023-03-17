@@ -7,6 +7,7 @@ import { FiExternalLink } from 'react-icons/fi';
 import { ImGithub } from 'react-icons/im';
 import { SiStyledcomponents, SiTypescript } from 'react-icons/si';
 import { iProject } from '../../../../../contexts/interfaces';
+import { TechnologyIcon } from './TechnologyIcon';
 
 interface iProjectCardProps {
 	project: iProject;
@@ -40,9 +41,7 @@ export function ProjectCard ({ project }: iProjectCardProps): JSX.Element {
 
 							<p>Feito com:</p>
 							<div className='techIcons'>
-								<FaReact size={22} color='#61dafb' title={'React.js'}/>
-								<SiTypescript size={20} color='#27609e' title={'TypeScript'}/>
-								<SiStyledcomponents size={40} title={'Styled-Components'}/>
+								<TechnologyIcon projectTechs={project.technologies}/>
 							</div>
 						</div>
 

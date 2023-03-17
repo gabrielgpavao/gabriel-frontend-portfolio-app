@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import { iDatabaseProviderValues, iProject, iProviderChildrenProps } from './interfaces';
+import { iDatabaseProviderValues, iProject, iProviderChildrenProps, tTechnologies } from './interfaces';
 
 export const DatabaseContext: React.Context<iDatabaseProviderValues> = createContext({} as iDatabaseProviderValues)
 
@@ -13,7 +13,7 @@ export function DatabaseProvider ({ children }: iProviderChildrenProps): JSX.Ele
 			link: '',
 			repository: '',
 			backgroundImg: 'https://i.imgur.com/7ZMUbgj.png',
-			technologies: ['React', 'TypeScript', 'Styled-Components']
+			technologies: ['React', 'TypeScript', 'Styled-Components', 'Node', 'Express', 'PostgreSQL']
 		}
 	])
 	

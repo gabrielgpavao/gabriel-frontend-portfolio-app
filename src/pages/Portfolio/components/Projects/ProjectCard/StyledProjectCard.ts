@@ -103,6 +103,7 @@ export const StyleProjectCard = styled.li<iCardBackgroundImg>`
 		
 		p + p {
 			margin-top: 25px;
+			margin-bottom: 2px;
 		}
 		
 		.techIcons {
