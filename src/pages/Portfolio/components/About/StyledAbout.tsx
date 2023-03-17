@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
-	padding-top: 50px;
+	padding-top: 40px;
 	min-height: 100vh;
 	background-image: url(./src/assets/aboutBg.png);
 	background-position: center;
@@ -80,8 +80,6 @@ export const StyledAbout = styled.section`
 
 	a:hover, button:hover {
 		transition: 0.3s;
-		/* height: 55px; */
-
 		background-color: var(--orange2);
 		color: var(--blue1);
 	}
