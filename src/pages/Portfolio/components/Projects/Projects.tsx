@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { StyledContainer } from '../../../../styles/Container'
 import { StyledSectionTitle } from '../../../../styles/SectionTitle'
 import { iIdProps } from '../../Portfolio'
 import { ImGithub } from 'react-icons/im';
 import { StyledProjects } from './StyledProjects';
 import { ProjectCard } from './ProjectCard/ProjectCard';
+import { DatabaseContext } from '../../../../contexts/DatabaseContext';
 
 export function Projects ({ id }: iIdProps): JSX.Element {
+	const { projects } = useContext(DatabaseContext)
+	
 	return (
 		<StyledProjects id={id}>
 			<StyledContainer>
@@ -16,7 +19,7 @@ export function Projects ({ id }: iIdProps): JSX.Element {
 					<a href='https://github.com/gabrielgpavao' target={'_blank'}>Acessar projetos <ImGithub/>&rarr;</a>
 				</span>
 				<ul>
-					<ProjectCard/>
+					{projects.map((project) => <ProjectCard key={project.id} project={project}/>)}
 				</ul>
 			</StyledContainer>
 		</StyledProjects>

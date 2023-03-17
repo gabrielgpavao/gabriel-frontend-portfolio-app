@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const StyleProjectCard = styled.li`
+interface iCardBackgroundImg {
+	backgroundImg: string;
+}
+
+export const StyleProjectCard = styled.li<iCardBackgroundImg>`
 	background-color: transparent;
 	height: 330px;
 	perspective: 1000px;
@@ -12,7 +16,7 @@ export const StyleProjectCard = styled.li`
 		height: 100%;
 		transition: transform 1s;
 		transform-style: preserve-3d;
-		background-image: url(./src/assets/projectBg.png);
+		background-image: url(${({ backgroundImg }) => backgroundImg});
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -98,7 +102,7 @@ export const StyleProjectCard = styled.li`
 		}
 		
 		p + p {
-			margin-top: 30px;
+			margin-top: 25px;
 		}
 		
 		.techIcons {
@@ -140,7 +144,7 @@ export const StyleProjectCard = styled.li`
 			small {
 				left: 1.45em;
 			}
-
+			
 			svg {
 				top: 0.48em;
 				right: 0.55em;
@@ -150,8 +154,9 @@ export const StyleProjectCard = styled.li`
 		small {
 			position: absolute;
 			top: 0.55em;
-			transition: 0.5s;
 			font-size: 15px;
+			font-weight: 500;
+			transition: 0.5s;
 			color: var(--orange1);
 		}
 		

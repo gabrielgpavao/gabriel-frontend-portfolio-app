@@ -6,25 +6,37 @@ import { FaReact } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import { ImGithub } from 'react-icons/im';
 import { SiStyledcomponents, SiTypescript } from 'react-icons/si';
+import { iProject } from '../../../../../contexts/interfaces';
 
-export function ProjectCard (): JSX.Element {
+interface iProjectCardProps {
+	project: iProject;
+}
+
+export function ProjectCard ({ project }: iProjectCardProps): JSX.Element {
 	return (
-		<StyleProjectCard>
+		<StyleProjectCard backgroundImg={project.backgroundImg}>
 			<div>
 				<div className='frontFace'>
-					<h3>League of Match</h3>
+					<h3>{project.name}</h3>
 					<small>Saiba mais</small>
 					<div>
-						<AiOutlineDesktop size={25}/>
-						<BiMobileAlt size={23}/>
+						{
+							project.responsive ?
+							<>
+								<AiOutlineDesktop size={25}/>
+								<BiMobileAlt size={23}/>
+							</>
+							:
+							<AiOutlineDesktop size={25}/>
+						}
 					</div>
 				</div>
 
 				<div className='backFace'>
 					<div className='backFaceContent'>
 						<div>
-							<h3>League of Match</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus neque enim quia reiciendis a soluta debiti</p>
+							<h3>{project.name}</h3>
+							<p>{project.description}</p>
 
 							<p>Feito com:</p>
 							<div className='techIcons'>
@@ -35,11 +47,11 @@ export function ProjectCard (): JSX.Element {
 						</div>
 
 						<div>
-							<button className='seeWebsite'>
+							<button className='seeWebsite' onClick={() => {open(project.link)}}>
 								<small>Ver Site</small>
 								<FiExternalLink size={18}/>
 							</button>
-							<button className='seeRepo'>
+							<button className='seeRepo' onClick={() => {open(project.repository)}}>
 								<small>Repositório</small>
 								<ImGithub size={18}/>
 							</button>
