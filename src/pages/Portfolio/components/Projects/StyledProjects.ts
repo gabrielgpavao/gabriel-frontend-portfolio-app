@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledProjects = styled.section`
 	padding-top: 60px;
 	margin-bottom: 60px;
-	min-height: 100vh;
 
 	h2 {
 		margin-bottom: 40px;
@@ -29,5 +28,10 @@ export const StyledProjects = styled.section`
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-gap: 25px;
+	}
+
+	.containerCTA {
+		display: flex;
+		justify-content: flex-end;
 	}
 `

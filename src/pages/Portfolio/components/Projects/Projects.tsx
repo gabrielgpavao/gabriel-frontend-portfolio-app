@@ -6,6 +6,7 @@ import { ImGithub } from 'react-icons/im';
 import { StyledProjects } from './StyledProjects';
 import { ProjectCard } from './ProjectCard/ProjectCard';
 import { DatabaseContext } from '../../../../contexts/DatabaseContext';
+import { ContactCTA } from '../../../../components/ContactCTA/ContactCTA';
 
 export function Projects ({ id }: iIdProps): JSX.Element {
 	const { projects } = useContext(DatabaseContext)
@@ -21,6 +22,10 @@ export function Projects ({ id }: iIdProps): JSX.Element {
 				<ul>
 					{projects.map((project) => <ProjectCard key={project.id} project={project}/>)}
 				</ul>
+
+				<div className='containerCTA'>
+					<ContactCTA styleOption='secondary' top='50px'/>
+				</div>
 			</StyledContainer>
 		</StyledProjects>
 	)

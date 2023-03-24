@@ -7,7 +7,6 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 	return (
 		<section id={id}>
 			<StyledContainer>
-				<h3>Contato</h3>
 				<StyledSectionTitle>Deixe-me <br/>ouvir de você!</StyledSectionTitle>
 				<p>Tem um projeto em mente? Estou no seu radar para contratação? Ou deseja se conectar comigo?</p>
 				<p>Excelente, estou sempre disponível para tirar suas dúvidas e ajudar no que você precisar</p>
