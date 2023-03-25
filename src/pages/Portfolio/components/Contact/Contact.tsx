@@ -46,7 +46,7 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 
 						<fieldset>
 							<textarea id="message" name="message" rows={1.5} onBlur={(event) => {handleValue(setHasMessageValue, event)}}></textarea>
-							<label htmlFor="message" className='messageLable'>Message</label>
+							<label htmlFor="message" className='messageLable'>Mensagem</label>
 							<span className='highlight'></span>
 						</fieldset>
 						
