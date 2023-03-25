@@ -6,7 +6,7 @@ export function ContactCTA ({ styleOption = 'primary', top = 0, right = 0, botto
 	const textCharacters: string[] = 'CONTACT NOW CONTACT NOW'.split('')
 
 	return (
-		<StyledContact styleOption={styleOption} top={top} right={right} bottom={bottom} left={left}>
+		<StyledContact href='#contact' styleOption={styleOption} top={top} right={right} bottom={bottom} left={left}>
 			<IoMdArrowUp size={65}/>
 			<div className='text'>
 				<small>{

@@ -8,7 +8,7 @@ export interface iStyledContactProps {
 	left?: string | 0;
 }
 
-export const StyledContact = styled.div<iStyledContactProps>`
+export const StyledContact = styled.a<iStyledContactProps>`
 	position: relative;
 	box-sizing: content-box;
 	display: grid;

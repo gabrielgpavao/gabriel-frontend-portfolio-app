@@ -76,7 +76,7 @@ export const StyledAbout = styled.section`
 		}
 	}
 
-	a:hover, button:hover {
+	.flexLayout a:hover, .flexLayout button:hover {
 		transition: 0.3s;
 		background-color: var(--orange2);
 		color: var(--blue1);
