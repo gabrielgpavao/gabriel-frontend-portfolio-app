@@ -41,8 +41,10 @@ export function About ({ id }: iIdProps): JSX.Element {
 								</a>
 							</button>
 							<button>
-								<RiMessage3Line size={24}/>
-								Contato
+								<a href="#contact">
+									<RiMessage3Line size={24}/>
+									Contato
+								</a>
 							</button>
 						</div>
 					</div>

@@ -75,12 +75,6 @@ export const StyledAbout = styled.section`
 			margin-right: 10px;
 		}
 	}
-	
-	button + button {
-		display: flex;
-		align-items: center;
-		padding: 0 10px;
-	}
 
 	a:hover, button:hover {
 		transition: 0.3s;
