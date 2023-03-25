@@ -8,7 +8,7 @@ interface iStyledContactProps {
 
 export const StyledContact = styled.div<iStyledContactProps>`
 	padding-top: 50px;
-	min-height: 100vh;
+	margin-bottom: 40px;
 
 	h2 {
 		margin-bottom: 30px;
