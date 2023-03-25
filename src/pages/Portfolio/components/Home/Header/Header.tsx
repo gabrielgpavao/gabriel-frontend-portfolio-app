@@ -33,7 +33,7 @@ export function Header(): JSX.Element {
 
             <aside>
 				<a href='mailto:gabpavao@outlook.com'>
-                	<MdEmail color={'var(--blue5)'} size={23} title={'E-mail'} onMouseOver={(target)=> console.log(target)}/>
+                	<MdEmail color={'var(--blue5)'} size={23} title={'E-mail'}/>
 				</a>
 				<a href='https://github.com/gabrielgpavao' target={'_blank'}>
                 	<ImGithub color={'var(--blue5)'} size={23} title={'GitHub'}/>
