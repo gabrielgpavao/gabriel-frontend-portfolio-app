@@ -38,6 +38,10 @@ export const StyledAbout = styled.section`
 		color: var(--blue5);
 		line-height: 22px;
 		text-align: justify;
+
+		span {
+			color: var(--blue6);
+		}
 	}
 
 	.flexLayout div div {
@@ -70,12 +74,6 @@ export const StyledAbout = styled.section`
 		svg {
 			margin-right: 10px;
 		}
-	}
-	
-	button + button {
-		display: flex;
-		align-items: center;
-		padding: 0 10px;
 	}
 
 	a:hover, button:hover {
