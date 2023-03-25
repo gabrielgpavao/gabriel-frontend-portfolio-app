@@ -33,5 +33,6 @@ export const StyledProjects = styled.section`
 	.containerCTA {
 		display: flex;
 		justify-content: flex-end;
+		height: 20px;
 	}
 `

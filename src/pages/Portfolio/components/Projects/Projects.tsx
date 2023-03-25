@@ -24,7 +24,7 @@ export function Projects ({ id }: iIdProps): JSX.Element {
 				</ul>
 
 				<div className='containerCTA'>
-					<ContactCTA styleOption='secondary' top='50px'/>
+					<ContactCTA styleOption='secondary'/>
 				</div>
 			</StyledContainer>
 		</StyledProjects>
