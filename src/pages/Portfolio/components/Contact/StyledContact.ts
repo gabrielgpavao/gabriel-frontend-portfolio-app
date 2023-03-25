@@ -8,8 +8,14 @@ interface iStyledContactProps {
 
 export const StyledContact = styled.div<iStyledContactProps>`
 	padding-top: 50px;
-	margin-bottom: 40px;
+	height: 100vh;
 
+	img {
+		width: 200px;
+		margin-top: 30px;
+	}
+	
+	
 	h2 {
 		margin-bottom: 30px;
 	}
@@ -87,7 +93,7 @@ export const StyledContact = styled.div<iStyledContactProps>`
 		}
 		
 		textarea {
-			min-height: 85px;
+			min-height: 120px;
 			max-height: 160px;
 			resize: vertical;
 			overflow-y: hidden;

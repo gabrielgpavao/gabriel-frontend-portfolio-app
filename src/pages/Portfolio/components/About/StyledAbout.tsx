@@ -17,7 +17,6 @@ export const StyledAbout = styled.section`
 			width: 30%;
 			background-color: #01374796;
 			border-radius: 100%;
-			/* border-radius: 30px; */
 			overflow: hidden;
 
 			img {
