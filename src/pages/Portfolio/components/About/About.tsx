@@ -30,10 +30,7 @@ export function About ({ id }: iIdProps): JSX.Element {
 							Como? Por meio da montagem de interfaces intuitivas, elaboração de páginas responsivas, animações dinâmicas e lógica de programação, a fim de garantir que os usuários aproveitem ao máximo o seu contato com o site.
 						</p>
 						<p>
-							Então, que tal desenvolvermos algo incrível juntos?
-						</p>
-						<p>
-							Me contate por email ou conecte-se comigo pelo <a href='https://www.linkedin.com/in/gabrielgpavao/' target='_blank'>Linkedin</a>. Será um prazer lhe conhecer.
+							<span>Então, que tal desenvolvermos algo incrível juntos?</span>
 						</p>
 
 						<div>

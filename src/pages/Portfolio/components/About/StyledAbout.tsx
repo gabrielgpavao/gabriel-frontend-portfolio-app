@@ -38,6 +38,10 @@ export const StyledAbout = styled.section`
 		color: var(--blue5);
 		line-height: 22px;
 		text-align: justify;
+
+		span {
+			color: var(--blue6);
+		}
 	}
 
 	.flexLayout div div {
