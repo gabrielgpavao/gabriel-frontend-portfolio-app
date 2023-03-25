@@ -17,7 +17,7 @@ export function Projects ({ id }: iIdProps): JSX.Element {
 				<StyledSectionTitle>Últimos Projetos</StyledSectionTitle>
 
 				<span>
-					<a href='https://github.com/gabrielgpavao' target={'_blank'}>Acessar projetos <ImGithub/>&rarr;</a>
+					<a href='https://github.com/gabrielgpavao' target={'_blank'}>Ver todos os repositórios <ImGithub/>&rarr;</a>
 				</span>
 				<ul>
 					{projects.map((project) => <ProjectCard key={project.id} project={project}/>)}
