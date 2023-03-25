@@ -23,22 +23,6 @@ export const StyledHeader = styled.header`
 		}
 	}
 
-	nav ul {
-		display: flex;
-		gap: 60px;
-
-		li a {
-			font-size: 18px;
-			transition: 0.2s;
-		}
-		
-		li a:hover {
-			transition: 0.2s;
-			color: var(--blue6);
-		}
-	}
-
-
 	aside {
 		width: 100px;
 		max-height: 247px;

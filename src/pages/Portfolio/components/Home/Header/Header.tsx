@@ -3,6 +3,7 @@ import { MdEmail } from 'react-icons/md';
 import { ImGithub } from 'react-icons/im';
 import { BsLinkedin } from 'react-icons/bs';
 import { StyledHeader } from './StyledHeader';
+import { NavMenu } from '../../../../../components/NavMenu/NavMenu';
 
 export function Header(): JSX.Element {
     return (
@@ -11,25 +12,7 @@ export function Header(): JSX.Element {
                 <span>GABRIEL</span> PAVÃO
             </h1>
 
-            <nav>
-                <ul>
-                    <li>
-                        <a href={'#home'}>Início</a>
-                    </li>
-                    <li>
-                        <a href={'#about'}>Sobre Mim</a>
-                    </li>
-                    <li>
-                        <a href={'#projects'}>Projetos</a>
-                    </li>
-                    <li>
-                        <a href={'#technologies'}>Tecnologias</a>
-                    </li>
-                    <li>
-                        <a href={'#contact'}>Contato</a>
-                    </li>
-                </ul>
-            </nav>
+            <NavMenu/>
 
             <aside>
 				<a href='mailto:gabpavao@outlook.com'>
