@@ -3,6 +3,7 @@ import { StyledContainer } from '../../../../styles/Container'
 import { StyledSectionTitle } from '../../../../styles/SectionTitle'
 import { iIdProps } from '../../Portfolio'
 import { StyledContact } from './StyledContact'
+import arrowIcon from '../../../../assets/arrowIcon.svg'
 
 type tEvent = React.FocusEvent<HTMLInputElement, Element> | React.FocusEvent<HTMLTextAreaElement, Element>
 
@@ -29,6 +30,7 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 						<p>Excelente, estou sempre disponível para tirar suas dúvidas e ajudar no que você precisar.</p>
 						<p>Me envie um email preenchendo as informações ao lado.</p>
 						<p>Vamos criar uma solução juntos!?</p>
+						<img src={arrowIcon} alt="" />
 					</div>
 
 					<form>
