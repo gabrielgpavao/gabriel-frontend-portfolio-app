@@ -2,10 +2,8 @@ import React from 'react'
 import { StyleProjectCard } from './StyledProjectCard'
 import { AiOutlineDesktop } from 'react-icons/ai'
 import { BiMobileAlt } from 'react-icons/bi'
-import { FaReact } from 'react-icons/fa';
 import { FiExternalLink } from 'react-icons/fi';
 import { ImGithub } from 'react-icons/im';
-import { SiStyledcomponents, SiTypescript } from 'react-icons/si';
 import { iProject } from '../../../../../contexts/interfaces';
 import { TechnologyIcon } from './TechnologyIcon';
 
@@ -46,11 +44,11 @@ export function ProjectCard ({ project }: iProjectCardProps): JSX.Element {
 						</div>
 
 						<div>
-							<button className='seeWebsite' onClick={() => {open(project.link)}}>
+							<button className='seeWebsite' onClick={() => {open(project.websiteUrl)}}>
 								<small>Ver Site</small>
 								<FiExternalLink size={18}/>
 							</button>
-							<button className='seeRepo' onClick={() => {open(project.repository)}}>
+							<button className='seeRepo' onClick={() => {open(project.repositoryUrl)}}>
 								<small>Repositório</small>
 								<ImGithub size={18}/>
 							</button>
