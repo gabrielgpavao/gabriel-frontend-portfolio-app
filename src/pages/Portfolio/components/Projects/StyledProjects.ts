@@ -24,6 +24,7 @@ export const StyledProjects = styled.section`
 	}
 	
 	ul {
+		height: 330px;
 		margin-top: 18px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
