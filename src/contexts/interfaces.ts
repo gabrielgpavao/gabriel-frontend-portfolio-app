@@ -14,8 +14,8 @@ export interface iProject {
 	name: string;
 	description: string;
 	responsive: boolean;
-	link: string;
-	repository: string;
+	websiteUrl: string;
+	repositoryUrl: string;
 	backgroundImg: string;
 	technologies: Array<tTechnologies>;
 }

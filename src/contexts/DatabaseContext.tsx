@@ -11,8 +11,8 @@ export function DatabaseProvider ({ children }: iProviderChildrenProps): JSX.Ele
 			name:'League of Match',
 			description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, odio sunt dicta aliquid quod distinctio dolore repellendus atque, eveniet',
 			responsive: true,
-			link: '',
-			repository: '',
+			websiteUrl: '',
+			repositoryUrl: '',
 			backgroundImg: 'https://i.imgur.com/7ZMUbgj.png',
 			technologies: ['React', 'TypeScript', 'Styled-Components', 'Node', 'Express', 'PostgreSQL']
 		}
