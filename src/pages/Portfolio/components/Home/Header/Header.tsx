@@ -2,6 +2,7 @@ import React from 'react';
 import { MdEmail } from 'react-icons/md';
 import { ImGithub } from 'react-icons/im';
 import { BsLinkedin } from 'react-icons/bs';
+import { RxHamburgerMenu } from 'react-icons/rx';
 import { StyledHeader } from './StyledHeader';
 import { NavMenu } from '../../../../../components/NavMenu/NavMenu';
 
@@ -29,6 +30,8 @@ export function Header(): JSX.Element {
                     <small>CONTACT ME</small>
                 </div>
             </aside>
+
+			<RxHamburgerMenu className='menuDropdown' size={30}/>
         </StyledHeader>
     );
 }
