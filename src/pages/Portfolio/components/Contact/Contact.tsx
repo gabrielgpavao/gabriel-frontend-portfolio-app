@@ -8,6 +8,7 @@ import arrowIcon from '../../../../assets/arrowIcon.svg'
 type tEvent = React.FocusEvent<HTMLInputElement, Element> | React.FocusEvent<HTMLTextAreaElement, Element>
 
 export function Contact ({ id }: iIdProps): JSX.Element {
+	const [hasNameValue, setHasNameValue] = useState<boolean>(false)
 	const [hasEmailValue, setHasEmailValue] = useState<boolean>(false)
 	const [hasSubjectValue, setHasSubjectValue] = useState<boolean>(false)
 	const [hasMessageValue, setHasMessageValue] = useState<boolean>(false)
@@ -21,7 +22,7 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 	}
 	
 	return (
-		<StyledContact id={id} hasEmailValue={hasEmailValue} hasSubjectValue={hasSubjectValue} hasMessageValue={hasMessageValue}>
+		<StyledContact id={id} hasNameValue={hasNameValue} hasEmailValue={hasEmailValue} hasSubjectValue={hasSubjectValue} hasMessageValue={hasMessageValue}>
 			<StyledContainer>
 				<StyledSectionTitle>Deixe-me <br/>ouvir de você!</StyledSectionTitle>
 				<div className='flexLayout'>
@@ -35,20 +36,26 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 
 					<form>
 						<fieldset>
+							<input id='name' type="text" name='name' onBlur={(event) => {handleValue(setHasNameValue, event)}}/>
+							<label htmlFor="name" className='nameLable'>Nome<span>*</span></label>
+							<span className='highlight'></span>
+						</fieldset>
+
+						<fieldset>
 							<input id='email' type="email" name='email' onBlur={(event) => {handleValue(setHasEmailValue, event)}}/>
-							<label htmlFor="email" className='emailLable'>Email</label>
+							<label htmlFor="email" className='emailLable'>Email<span>*</span></label>
 							<span className='highlight'></span>
 						</fieldset>
 
 						<fieldset>
 							<input id='subject' type="text" name='subject' onBlur={(event) => {handleValue(setHasSubjectValue, event)}}/>
-							<label htmlFor="subject" className='subjectLable'>Assunto</label>
+							<label htmlFor="subject" className='subjectLable'>Assunto<span>*</span></label>
 							<span className='highlight'></span>
 						</fieldset>
 
 						<fieldset>
 							<textarea id="message" name="message" rows={1.5} onBlur={(event) => {handleValue(setHasMessageValue, event)}}></textarea>
-							<label htmlFor="message" className='messageLable'>Mensagem</label>
+							<label htmlFor="message" className='messageLable'>Mensagem<span>*</span></label>
 							<span className='highlight'></span>
 						</fieldset>
 						

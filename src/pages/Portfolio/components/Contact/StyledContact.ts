@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 
 interface iStyledContactProps {
+	hasNameValue: boolean;
 	hasEmailValue: boolean;
 	hasSubjectValue: boolean;
 	hasMessageValue: boolean;
@@ -8,7 +9,7 @@ interface iStyledContactProps {
 
 export const StyledContact = styled.div<iStyledContactProps>`
 	padding-top: 50px;
-	height: 100vh;
+	min-height: 100vh;
 
 	img {
 		width: 200px;
@@ -45,6 +46,7 @@ export const StyledContact = styled.div<iStyledContactProps>`
 
 	form {
 		width: 100%;
+		margin-bottom: 20px;
 		
 		fieldset {
 			position: relative;
@@ -66,6 +68,11 @@ export const StyledContact = styled.div<iStyledContactProps>`
 			position: absolute;
 			color: var(--blue6);
 			transition: all 0.3s ease;
+
+			span {
+				margin-left: 3px;
+				color: red;
+			}
 		}
 		
 		.highlight {
@@ -92,10 +99,28 @@ export const StyledContact = styled.div<iStyledContactProps>`
 		}
 		
 		textarea {
-			min-height: 120px;
+			min-height: 80px;
 			max-height: 160px;
 			resize: vertical;
 			overflow-y: hidden;
+		}
+
+		.nameLable {
+			${({hasNameValue}) => {
+				if (!hasNameValue) {
+					return css`
+						top: 12px;
+						left: 10px;
+					` 
+				} else {
+					return css`
+						top: -20px;
+						left: 0;
+						font-size: 15px;
+						color: var(--blue5);
+					`
+				}
+			}}
 		}
 
 		.emailLable {
