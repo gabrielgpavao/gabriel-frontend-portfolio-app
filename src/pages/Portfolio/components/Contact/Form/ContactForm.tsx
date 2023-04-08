@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from 'react-hook-form';
 import { DatabaseContext } from '../../../../../contexts/DatabaseContext';
 import { yupResolver } from '@hookform/resolvers/yup'
 import { emailSchema } from './emailSchema';
+import toast from 'react-hot-toast'
 
 type tEvent = React.FocusEvent<HTMLInputElement, Element> | React.FocusEvent<HTMLTextAreaElement, Element>
 
@@ -37,7 +38,33 @@ export function ContactForm (): JSX.Element {
 	const submitEmail : SubmitHandler<iFormData> = (data: iFormData) => {
         sendEmailRequest(data)
 		reset()
+
+		toast.success('Email enviado!', {
+			style: {
+				backgroundColor: 'var(--blue3)',
+				color: 'var(--blue6)'
+			}
+		})
     }
+	
+	function handleErrorsToast () {
+		const toastStyle = {
+			style: {
+				backgroundColor: 'var(--blue3)',
+				color: 'var(--orange2)'
+			} 
+		}
+		
+		if (errors.name) {
+			toast.error(errors.name.message!, toastStyle)
+		} else if (errors.from) {
+			toast.error(errors.from.message!, toastStyle)
+		} else if (errors.subject) {
+			toast.error(errors.subject.message!, toastStyle)
+		} else if (errors.text) {
+			toast.error(errors.text.message!, toastStyle)
+		}
+	}
 	
 	return (
 		<StyledContactForm onSubmit={handleSubmit(submitEmail)} noValidate hasNameValue={hasNameValue} hasEmailValue={hasEmailValue} hasSubjectValue={hasSubjectValue} hasMessageValue={hasMessageValue}>
@@ -65,7 +92,7 @@ export function ContactForm (): JSX.Element {
 				<span className='highlight'></span>
 			</fieldset>
 			
-			<button type='submit'>
+			<button type='submit' onClick={handleErrorsToast}>
 				<span className="circle" aria-hidden="true">
 					<span className="arrow"></span>
 				</span>
