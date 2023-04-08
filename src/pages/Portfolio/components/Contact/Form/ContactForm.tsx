@@ -2,6 +2,8 @@ import React, { useContext, useState } from 'react';
 import { StyledContactForm } from './StyledContactForm';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { DatabaseContext } from '../../../../../contexts/DatabaseContext';
+import { yupResolver } from '@hookform/resolvers/yup'
+import { emailSchema } from './emailSchema';
 
 type tEvent = React.FocusEvent<HTMLInputElement, Element> | React.FocusEvent<HTMLTextAreaElement, Element>
 
@@ -27,12 +29,14 @@ export function ContactForm (): JSX.Element {
 		}
 	}
 
-	const { register, handleSubmit, formState: { errors }} = useForm<iFormData>({
-		mode: 'onChange'
+	const { register, handleSubmit, reset, formState: { errors }} = useForm<iFormData>({
+		mode: 'onSubmit',
+		resolver: yupResolver(emailSchema)
 	})
 
 	const submitEmail : SubmitHandler<iFormData> = (data: iFormData) => {
         sendEmailRequest(data)
+		reset()
     }
 	
 	return (
