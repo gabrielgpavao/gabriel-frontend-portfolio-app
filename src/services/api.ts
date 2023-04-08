@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios';
 
 export const api: AxiosInstance = axios.create({
-	baseURL: 'http://localhost:3000',
+	baseURL: 'https://gabriel-portfolio-backend.onrender.com',
 	responseType: 'json',
 	timeout: 5000
 })
