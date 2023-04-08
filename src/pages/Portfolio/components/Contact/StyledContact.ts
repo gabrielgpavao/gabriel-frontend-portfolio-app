@@ -32,7 +32,16 @@ export const StyledContact = styled.div`
 	}
 	
 	p {
+		color: var(--blue5);
 		line-height: 22px;
+
+		a {
+			color: var(--blue6);
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
 	}
 
 	div div p:last-child{
