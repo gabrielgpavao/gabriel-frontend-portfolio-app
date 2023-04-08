@@ -1,28 +1,14 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { StyledContainer } from '../../../../styles/Container'
 import { StyledSectionTitle } from '../../../../styles/SectionTitle'
 import { iIdProps } from '../../Portfolio'
 import { StyledContact } from './StyledContact'
 import arrowIcon from '../../../../assets/arrowIcon.svg'
-
-type tEvent = React.FocusEvent<HTMLInputElement, Element> | React.FocusEvent<HTMLTextAreaElement, Element>
+import { ContactForm } from './Form/ContactForm'
 
 export function Contact ({ id }: iIdProps): JSX.Element {
-	const [hasNameValue, setHasNameValue] = useState<boolean>(false)
-	const [hasEmailValue, setHasEmailValue] = useState<boolean>(false)
-	const [hasSubjectValue, setHasSubjectValue] = useState<boolean>(false)
-	const [hasMessageValue, setHasMessageValue] = useState<boolean>(false)
-	
-	function handleValue (setState: (value: boolean) => void, event: tEvent): void {
-		if (event.target.value) {
-			setState(true)
-		} else {
-			setState(false)
-		}
-	}
-	
 	return (
-		<StyledContact id={id} hasNameValue={hasNameValue} hasEmailValue={hasEmailValue} hasSubjectValue={hasSubjectValue} hasMessageValue={hasMessageValue}>
+		<StyledContact id={id}>
 			<StyledContainer>
 				<StyledSectionTitle>Deixe-me <br/>ouvir de você!</StyledSectionTitle>
 				<div className='flexLayout'>
@@ -34,38 +20,7 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 						<img src={arrowIcon} alt="" />
 					</div>
 
-					<form>
-						<fieldset>
-							<input id='name' type="text" name='name' onBlur={(event) => {handleValue(setHasNameValue, event)}}/>
-							<label htmlFor="name" className='nameLable'>Nome<span>*</span></label>
-							<span className='highlight'></span>
-						</fieldset>
-
-						<fieldset>
-							<input id='email' type="email" name='email' onBlur={(event) => {handleValue(setHasEmailValue, event)}}/>
-							<label htmlFor="email" className='emailLable'>Email<span>*</span></label>
-							<span className='highlight'></span>
-						</fieldset>
-
-						<fieldset>
-							<input id='subject' type="text" name='subject' onBlur={(event) => {handleValue(setHasSubjectValue, event)}}/>
-							<label htmlFor="subject" className='subjectLable'>Assunto<span>*</span></label>
-							<span className='highlight'></span>
-						</fieldset>
-
-						<fieldset>
-							<textarea id="message" name="message" rows={1.5} onBlur={(event) => {handleValue(setHasMessageValue, event)}}></textarea>
-							<label htmlFor="message" className='messageLable'>Mensagem<span>*</span></label>
-							<span className='highlight'></span>
-						</fieldset>
-						
-						<button type='submit'>
-							<span className="circle" aria-hidden="true">
-								<span className="arrow"></span>
-							</span>
-							<span className="buttonText">ENVIAR</span>
-						</button>
-					</form>
+					<ContactForm/>
 				</div>
 			</StyledContainer>
 		</StyledContact>
