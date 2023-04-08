@@ -33,7 +33,7 @@ export const GlobalStyles = createGlobalStyle`
 
     a {
         text-decoration: none;
-		color: var(--blue4)
+		color: var(--blue5)
     }
     
     button {
@@ -41,13 +41,17 @@ export const GlobalStyles = createGlobalStyle`
     }
 	
 	:root {
-		--blue1: #02131d;
+		--blue1: #011825;
 		--blue2: #002733;
 		--blue3: #013747;
 		--blue4: #7d9eae;
 		--blue5: #89a5b7;
+		--blue6: #ceecff;
 		--orange1: #ff7a01;
 		--orange2: #ff9432;
-		
+	}
+
+	.flexLayout {
+		display: flex;
 	}
 `
