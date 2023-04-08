@@ -14,9 +14,6 @@ export function NavMenu () {
 					<a href={'#projects'}>Projetos</a>
 				</li>
 				<li>
-					<a href={'#technologies'}>Tecnologias</a>
-				</li>
-				<li>
 					<a href={'#contact'}>Contato</a>
 				</li>
 			</ul>
