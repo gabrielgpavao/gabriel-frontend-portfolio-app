@@ -9,15 +9,16 @@ export const StyledAbout = styled.section`
 	background-size: cover;
 
 	.flexLayout {
+		justify-content: space-between;
 		width: 100%;
 		margin-top: 40px;
-		gap: 10%;
+		gap: 10px;
 		
 		figure {
-			width: 30%;
+			height: 360px;
+			width: 350px;
 			background-color: #01374796;
 			border-radius: 100%;
-			/* border-radius: 30px; */
 			overflow: hidden;
 
 			img {
@@ -80,5 +81,36 @@ export const StyledAbout = styled.section`
 		transition: 0.3s;
 		background-color: var(--orange2);
 		color: var(--blue1);
+	}
+
+	@media (max-width: 990px) {
+		.flexLayout figure {
+			height: 330px;
+			width: 320px;
+		}
+	}
+	
+	@media (max-width: 900px) {
+		background-position-y: -60px;
+
+		.flexLayout {
+			figure {
+				display: none;
+			}
+
+			> div {
+				width: 100%;
+
+				p {
+					text-align: start;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 580px) {
+		.flexLayout > div {
+			gap: 20px;
+		}
 	}
 `

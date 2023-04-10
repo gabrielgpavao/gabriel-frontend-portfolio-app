@@ -30,9 +30,11 @@ export function Home({ id }: iIdProps): JSX.Element {
 						<p>Transformando códigos em soluções digitais personalizadas, a fim de atender as necessidades específicas da sua empresa e de seus clientes.</p>
 					</div>
 				</div>
-			</StyledContainer>
 
-			<ContactCTA styleOption={'primary'} top={'-40px'} left={'1100px'}/>
+				<div className='containerCTA'>
+					<ContactCTA styleOption={'primary'} top={'-40px'}/>
+				</div>
+			</StyledContainer>
 		</StyledHome>
 	)
 }
