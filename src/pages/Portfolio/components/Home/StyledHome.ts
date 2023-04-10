@@ -137,6 +137,8 @@ export const StyledHome = styled.section`
 	}
 
 	@media (max-width: 700px) {
+		height: 470px;
+		
 		figure {
 			display: none;
 		}
