@@ -156,7 +156,15 @@ export const StyledHome = styled.section`
 
 	@media (max-width: 490px) {
 		h2 {
-			font-size: 50px;
+			font-size: 40px;
+		}
+	}
+
+	@media (max-width: 400px) {
+		h2 span {
+			div span, .hyphen {
+				display: none;
+			}
 		}
 	}
 `

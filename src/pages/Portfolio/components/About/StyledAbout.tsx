@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
+	min-height: 100vh;
 	padding-top: 40px;
-	max-height: 100vh;
 	background-image: url(./src/assets/aboutBg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	
 	.flexLayout {
 		justify-content: space-between;
 		width: 100%;
@@ -88,7 +88,13 @@ export const StyledAbout = styled.section`
 		justify-content: flex-end;
 	}
 
+	@media (max-width: 1040px) {
+		margin-bottom: 30px;
+	}
+	
 	@media (max-width: 990px) {
+		margin-bottom: 0;
+		
 		.flexLayout figure {
 			height: 330px;
 			width: 320px;
@@ -116,6 +122,12 @@ export const StyledAbout = styled.section`
 	@media (max-width: 580px) {
 		.flexLayout > div {
 			gap: 20px;
+		}
+	}
+
+	@media (max-width: 361px) {
+		.flexLayout div div {
+			gap: 10px;
 		}
 	}
 `

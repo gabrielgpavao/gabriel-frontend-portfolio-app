@@ -52,6 +52,10 @@ export const StyledContact = styled.div`
 		color: var(--blue6);
 	}
 	
+	@media (max-width: 1040px) {
+		padding-top: 20px;
+	}
+
 	@media (max-width: 800px) {
 		.flexLayout {
 			flex-direction: column;
