@@ -36,4 +36,14 @@ export const StyledNavMenu = styled.nav`
 		width: 100%;
 		left: 0%;
 	}
+
+	@media (max-width: 1140px) {
+		ul {
+			gap: 50px;
+		}
+	}
+	
+	@media (max-width: 930px) {
+		display: none;
+	}
 `

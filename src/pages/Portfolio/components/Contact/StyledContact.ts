@@ -44,7 +44,37 @@ export const StyledContact = styled.div`
 		}
 	}
 
+	.shorterParagraph {
+		max-width: 470px;
+	}
+	
 	div div p:last-child{
 		color: var(--blue6);
+	}
+	
+	@media (max-width: 1040px) {
+		padding-top: 20px;
+	}
+
+	@media (max-width: 800px) {
+		.flexLayout {
+			flex-direction: column;
+
+			form {
+				width: 100%;
+			}
+			
+			> div {
+				width: 100%;
+				
+				.shorterParagraph {
+					max-width: unset;
+				}
+				
+				img {
+					display: none;
+				}
+			}
+		}
 	}
 `

@@ -1,23 +1,24 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
-	padding-top: 40px;
 	min-height: 100vh;
+	padding-top: 40px;
 	background-image: url(./src/assets/aboutBg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-
+	
 	.flexLayout {
+		justify-content: space-between;
 		width: 100%;
 		margin-top: 40px;
-		gap: 10%;
+		gap: 10px;
 		
 		figure {
-			width: 30%;
+			height: 360px;
+			width: 350px;
 			background-color: #01374796;
 			border-radius: 100%;
-			/* border-radius: 30px; */
 			overflow: hidden;
 
 			img {
@@ -80,5 +81,53 @@ export const StyledAbout = styled.section`
 		transition: 0.3s;
 		background-color: var(--orange2);
 		color: var(--blue1);
+	}
+
+	.containerCTA {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	@media (max-width: 1040px) {
+		margin-bottom: 30px;
+	}
+	
+	@media (max-width: 990px) {
+		margin-bottom: 0;
+		
+		.flexLayout figure {
+			height: 330px;
+			width: 320px;
+		}
+	}
+	
+	@media (max-width: 900px) {
+		background-position-y: -60px;
+
+		.flexLayout {
+			figure {
+				display: none;
+			}
+
+			> div {
+				width: 100%;
+
+				p {
+					text-align: start;
+				}
+			}
+		}
+	}
+
+	@media (max-width: 580px) {
+		.flexLayout > div {
+			gap: 20px;
+		}
+	}
+
+	@media (max-width: 361px) {
+		.flexLayout div div {
+			gap: 10px;
+		}
 	}
 `

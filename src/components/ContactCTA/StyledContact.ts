@@ -71,4 +71,8 @@ export const StyledContact = styled.a<iStyledContactProps>`
 			color: #010f17;
 		}
 	}
+
+	@media (max-width: 1040px) {
+		display: none;
+	}
 `

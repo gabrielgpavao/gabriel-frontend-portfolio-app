@@ -60,4 +60,44 @@ export const StyledHeader = styled.header`
 			font-weight: 600;
 		}
 	}
+	
+	.menuDropdown {
+		display: none;
+	}
+
+	@media (max-width: 1140px) {
+		aside {
+			position: static;
+			max-height: unset;
+			width: unset;
+			padding: 15px 20px 20px 15px;
+			flex-direction: row;
+			gap: 20px;
+
+			div {
+				transform: unset;
+				width: unset;
+				padding: 3px 10px;
+				position: absolute;
+				top: 68px;
+				right: 24px;
+				background-color: var(--orange1);
+			}
+		}
+
+		svg:hover {
+			width: auto;
+			height: auto;
+		}
+	}
+
+	@media (max-width: 1040px) {
+		aside {
+			display: none;
+		}
+		
+		.menuDropdown {
+			display: block;
+		}
+	}
 `

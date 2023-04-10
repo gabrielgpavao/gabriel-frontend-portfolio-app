@@ -7,6 +7,7 @@ interface iCardBackgroundImg {
 export const StyleProjectCard = styled.li<iCardBackgroundImg>`
 	background-color: transparent;
 	height: 330px;
+	width: 273px;
 	perspective: 1000px;
 	font-family: 'Poppins', sans-serif;
 	
@@ -190,5 +191,10 @@ export const StyleProjectCard = styled.li<iCardBackgroundImg>`
 				transform: rotateZ(360deg);
 			}
 		}
+	}
+
+	@media (max-width: 400px) {
+		min-width: 273px;
+		width: 85%;
 	}
 `

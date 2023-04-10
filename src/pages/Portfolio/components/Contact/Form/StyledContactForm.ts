@@ -219,4 +219,11 @@ export const StyledContactForm = styled.form<iStyledContactProps>`
 	button:hover .buttonText {
 		color: var(--blue1);
 	}
+
+	@media (max-width: 800px) {
+		textarea {
+			min-height: 100px;
+			max-height: 180px;
+		}
+	}
 `
