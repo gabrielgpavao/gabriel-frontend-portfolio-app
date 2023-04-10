@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
 	padding-top: 40px;
-	min-height: 100vh;
+	max-height: 100vh;
 	background-image: url(./src/assets/aboutBg.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -81,6 +81,11 @@ export const StyledAbout = styled.section`
 		transition: 0.3s;
 		background-color: var(--orange2);
 		color: var(--blue1);
+	}
+
+	.containerCTA {
+		display: flex;
+		justify-content: flex-end;
 	}
 
 	@media (max-width: 990px) {
