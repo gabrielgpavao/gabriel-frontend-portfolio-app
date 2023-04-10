@@ -54,4 +54,8 @@ export const GlobalStyles = createGlobalStyle`
 	.flexLayout {
 		display: flex;
 	}
+
+	html {
+		scroll-behavior: smooth;
+	}
 `
