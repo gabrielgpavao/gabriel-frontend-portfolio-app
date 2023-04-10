@@ -50,7 +50,9 @@ export function About ({ id }: iIdProps): JSX.Element {
 					</div>
 				</div>
 
-				<ContactCTA styleOption='secondary' top={'30px'}/>
+				<div className='containerCTA'>
+					<ContactCTA styleOption='secondary'/>
+				</div>
 			</StyledContainer>
 		</StyledAbout>
 	)

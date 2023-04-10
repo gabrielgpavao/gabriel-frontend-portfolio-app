@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledProjects = styled.section`
-	padding-top: 60px;
-	margin-bottom: 60px;
+	padding-top: 30px;
+	margin-bottom: 50px;
 
 	h2 {
 		margin-bottom: 40px;
@@ -47,6 +47,9 @@ export const StyledProjects = styled.section`
 	}
 
 	@media (max-width: 605px) {
+		margin-top: 30px;
+		margin-bottom: 30px;
+
 		ul {
 			grid-template-columns: repeat(4, 1fr);
 			height: 380px;
@@ -58,6 +61,7 @@ export const StyledProjects = styled.section`
 		ul {
 			grid-template-columns: repeat(1, 1fr);
 			place-items: center;
+			height: unset;
 		}
 	}
 `
