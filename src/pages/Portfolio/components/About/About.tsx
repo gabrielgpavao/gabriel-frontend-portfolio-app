@@ -35,7 +35,7 @@ export function About ({ id }: iIdProps): JSX.Element {
 
 						<div>
 							<button>
-								<a href={gabrielCV} download={'cv-gabrielpavao-frontend-dev.pdf'}>
+								<a href={gabrielCV} download={'GabrielPavão-DesenvolvedorFrontend.pdf'}>
 									<MdOutlineContactPage size={24}/>
 									Download CV
 								</a>

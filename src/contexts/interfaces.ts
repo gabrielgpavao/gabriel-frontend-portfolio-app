@@ -7,6 +7,7 @@ export interface iProviderChildrenProps {
 export interface iDatabaseProviderValues {
 	projects: Array<iProject>;
 	setProjects: React.Dispatch<React.SetStateAction<iProject[]>>;
+	sendEmailRequest: (emailData: iEmailRequestData) => Promise<void>;
 }
 
 export interface iProject {
@@ -21,3 +22,10 @@ export interface iProject {
 }
 
 export type tTechnologies = 'React' | 'TypeScript' | 'JavaScript' | 'Styled-Components' | 'Node' | 'Express' | 'Python' | 'Django' | 'PostgreSQL'
+
+export interface iEmailRequestData {
+	name: string;
+	from: string;
+	subject: string;
+	text: string;
+}
