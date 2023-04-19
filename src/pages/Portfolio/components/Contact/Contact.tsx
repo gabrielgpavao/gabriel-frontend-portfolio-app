@@ -3,7 +3,7 @@ import { StyledContainer } from '../../../../styles/Container'
 import { StyledSectionTitle } from '../../../../styles/SectionTitle'
 import { iIdProps } from '../../Portfolio'
 import { StyledContact } from './StyledContact'
-import arrowIcon from '../../../../assets/arrowIcon.svg'
+import arrowIcon from '../../../../assets/icons/arrowIcon.svg'
 import { ContactForm } from './Form/ContactForm'
 
 export function Contact ({ id }: iIdProps): JSX.Element {

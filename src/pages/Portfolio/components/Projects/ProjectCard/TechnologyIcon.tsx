@@ -4,13 +4,13 @@ import { FaReact } from 'react-icons/fa';
 import { GrNode } from 'react-icons/gr';
 import { SiTypescript, SiJavascript, SiDjango, SiRedux, SiSass, SiHtml5 } from 'react-icons/si';
 import { ImTree } from 'react-icons/im'
-import nextjsIcon from '../../../../../assets/nextjsIcon.svg'
-import styledComponentIcon from '../../../../../assets/styledComponentIcon.svg'
-import expressIcon from '../../../../../assets/expressIcon.svg'
-import pythonIcon from '../../../../../assets/pythonIcon.svg'
-import postgreIcon from '../../../../../assets/postgreIcon.svg'
-import reactRouterIcon from '../../../../../assets/reactRouterIcon.svg'
-import reactHookFormIcon from '../../../../../assets/reactHookFormIcon.svg'
+import nextjsIcon from '../../../../../assets/icons/nextjsIcon.svg'
+import styledComponentIcon from '../../../../../assets/icons/styledComponentIcon.svg'
+import expressIcon from '../../../../../assets/icons/expressIcon.svg'
+import pythonIcon from '../../../../../assets/icons/pythonIcon.svg'
+import postgreIcon from '../../../../../assets/icons/postgreIcon.svg'
+import reactRouterIcon from '../../../../../assets/icons/reactRouterIcon.svg'
+import reactHookFormIcon from '../../../../../assets/icons/reactHookFormIcon.svg'
 
 interface iTechnologyIconProps {
 	projectTechs: Array<tTechnologies>
