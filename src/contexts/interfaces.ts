@@ -21,7 +21,7 @@ export interface iProject {
 	technologies: Array<tTechnologies>;
 }
 
-export type tTechnologies = 'React' | 'TypeScript' | 'JavaScript' | 'Styled-Components' | 'Node' | 'Express' | 'Python' | 'Django' | 'PostgreSQL'
+export type tTechnologies = 'React' | 'Redux' | 'React-Router' | 'React-Hook-Form' | 'Next' | 'TypeScript' | 'JavaScript' | 'Styled-Components' | 'SASS' | 'Node' | 'Express' | 'Python' | 'Django' | 'PostgreSQL' | 'HTML' | 'CSS' | 'ContextAPI'
 
 export interface iEmailRequestData {
 	name: string;
