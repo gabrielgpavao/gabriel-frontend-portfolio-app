@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const StyledAbout = styled.section`
 	min-height: 100vh;
 	padding-top: 40px;
-	background-image: url(./src/assets/aboutBg.png);
+	background-image: url(./src/assets/page/aboutBg.png);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;

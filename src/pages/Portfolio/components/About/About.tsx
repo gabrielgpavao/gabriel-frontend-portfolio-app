@@ -7,7 +7,7 @@ import { StyledSectionTitle } from '../../../../styles/SectionTitle'
 import { RiMessage3Line } from 'react-icons/ri'
 import { MdOutlineContactPage } from 'react-icons/md'
 import gabrielCV from '../../../../../src/assets/gabrielCV.pdf'
-import profilePhoto from '../../../../assets/profilePhoto.png'
+import profilePhoto from '../../../../assets/page/profilePhoto.png'
 
 export function About ({ id }: iIdProps): JSX.Element {
 	return (

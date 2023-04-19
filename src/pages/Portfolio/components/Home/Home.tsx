@@ -2,7 +2,7 @@ import React from 'react'
 import { StyledContainer } from '../../../../styles/Container'
 import { iIdProps } from '../../Portfolio'
 import { Header } from './Header/Header'
-import homeImg from '../../../../assets/home-img.png'
+import homeImg from '../../../../assets/page/homeImg.png'
 import { StyledHome } from './StyledHome'
 import { ContactCTA } from '../../../../components/ContactCTA/ContactCTA'
 
