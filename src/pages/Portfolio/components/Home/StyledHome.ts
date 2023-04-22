@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledHome = styled.section`
-	height: 100vh;
+	height: 625px;
 	background-image: linear-gradient(to right, #011826 0%, #000e17 100%);
 
 	.flexLayout {
@@ -80,6 +80,8 @@ export const StyledHome = styled.section`
 	}
 
 	@media (max-width: 1040px) {
+		height: 560px;
+		
 		figure {
 			height: 350px;
 			margin-right: 20px;
@@ -96,6 +98,8 @@ export const StyledHome = styled.section`
 	}
 
 	@media (max-width: 900px) {
+		height: 475px;
+
 		.flexLayout {
 			margin-top: 30px;
 		}
@@ -137,7 +141,7 @@ export const StyledHome = styled.section`
 	}
 
 	@media (max-width: 700px) {
-		height: 470px;
+		height: 420px;
 		
 		figure {
 			display: none;
@@ -155,6 +159,8 @@ export const StyledHome = styled.section`
 	}
 
 	@media (max-width: 490px) {
+		height: 380px;
+		
 		h2 {
 			font-size: 40px;
 		}
