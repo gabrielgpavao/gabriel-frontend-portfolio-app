@@ -33,6 +33,10 @@ export const StyledMenuModal = styled.div`
 				cursor: pointer;
 			}
 		}
+
+		nav {
+			display: unset;
+		}
 		
 		ul {
 			flex-direction: column;
