@@ -17,16 +17,33 @@ export const StyledMenuModal = styled.div`
 		padding: 20px 1rem;
 		background-color: #000c12;
 
+		.modalHeader{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			
+			h2 {
+				margin: 0;
+				font-size: 22px;
+			}
+
+			span {
+				font-size: 22px;
+				cursor: pointer;
+			}
+		}
+		
 		ul {
 			flex-direction: column;
-			gap: 30px;
+			gap: 25px;
 			margin-bottom: 40px;
 
 			li {
 				border-bottom: 1px solid var(--blue6);
 
 				a {
-					line-height: 60px;
+					line-height: 50px;
 					font-size: 20px;
 					color: var(--blue6);
 				}
@@ -43,9 +60,9 @@ export const StyledMenuModal = styled.div`
 			}
 		}
 
-		> div {
+		:last-child div {
 			h3 {
-				font-size: 20px;
+				font-size: 18px;
 				color: var(--orange2);
 				margin-bottom: 15px;
 			}
@@ -59,6 +76,7 @@ export const StyledMenuModal = styled.div`
 					display: flex;
 					align-items: center;
 					gap: 6px;
+					font-size: 14px;
 				}
 
 				a:hover {
