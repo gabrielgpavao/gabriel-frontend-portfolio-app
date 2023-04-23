@@ -22,10 +22,6 @@ export function Projects ({ id }: iIdProps): JSX.Element {
 				<ul>
 					{projects.map((project) => <ProjectCard key={project.id} project={project}/>)}
 				</ul>
-
-				<div className='containerCTA'>
-					<ContactCTA styleOption='secondary' top={'20px'}/>
-				</div>
 			</StyledContainer>
 		</StyledProjects>
 	)
