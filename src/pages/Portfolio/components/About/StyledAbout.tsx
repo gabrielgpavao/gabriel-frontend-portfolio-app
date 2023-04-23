@@ -129,5 +129,18 @@ export const StyledAbout = styled.section`
 		.flexLayout div div {
 			gap: 10px;
 		}
+
+		button {
+			height: 45px;
+			font-size: 16px;
+
+			a {
+				padding: 0 8px;
+			}
+
+			svg {
+				margin-right: 6px;
+			}
+		}
 	}
 `
