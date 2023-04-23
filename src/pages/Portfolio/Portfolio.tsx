@@ -5,6 +5,7 @@ import { Footer } from './components/Footer/Footer';
 import { Home } from './components/Home/Home';
 import { Projects } from './components/Projects/Projects';
 import { Toaster } from 'react-hot-toast';
+import { Technologies } from './components/Technologies/Technologies';
 
 export interface iIdProps {
     id: string;
@@ -19,6 +20,7 @@ export function Portfolio(): JSX.Element {
 			<Home id={'home'}/>
 			<About id={'about'}/>
 			<Projects id={'projects'}/>
+			<Technologies/>
 			<Contact id={'contact'}/>
 			<Footer/>
 		</>
