@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const StyledAbout = styled.section`
-	min-height: 100vh;
 	padding-top: 40px;
 	background-image: url(./src/assets/page/aboutBg.png);
 	background-position: center;
@@ -9,6 +8,7 @@ export const StyledAbout = styled.section`
 	background-size: cover;
 	
 	.flexLayout {
+		height: 265px;
 		justify-content: space-between;
 		width: 100%;
 		margin-top: 40px;
@@ -86,14 +86,16 @@ export const StyledAbout = styled.section`
 	.containerCTA {
 		display: flex;
 		justify-content: flex-end;
+		position: relative;
+		top: 65px;
 	}
 
 	@media (max-width: 1040px) {
-		margin-bottom: 30px;
+		margin-bottom: 110px;
 	}
 	
 	@media (max-width: 990px) {
-		margin-bottom: 0;
+		margin-bottom: 70px;
 		
 		.flexLayout figure {
 			height: 330px;
@@ -103,6 +105,7 @@ export const StyledAbout = styled.section`
 	
 	@media (max-width: 900px) {
 		background-position-y: -60px;
+		margin-bottom: 50px;
 
 		.flexLayout {
 			figure {
@@ -120,6 +123,12 @@ export const StyledAbout = styled.section`
 	}
 
 	@media (max-width: 580px) {
+		margin-bottom: 100px;
+
+		.flexLayout {
+			height: 330px;
+		}
+		
 		.flexLayout > div {
 			gap: 20px;
 		}
