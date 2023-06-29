@@ -16,7 +16,7 @@ export function Contact ({ id }: iIdProps): JSX.Element {
 						<p>Tem um projeto em mente? Estou no seu radar para contratação? Ou deseja se conectar comigo?</p>
 						<p>Excelente, estou sempre disponível para tirar suas dúvidas e ajudar no que você precisar.</p>
 						<p className='shorterParagraph'>Me envie um email preenchendo as informações ao lado ou envie diretamente para este endereço: <a href='mailto:gabpavao@outlook.com'>gabpavao@outlook.com</a></p>
-						<p>Vamos criar uma solução juntos!?</p>
+						<p>Vamos criar uma solução juntos!</p>
 						<img src={arrowIcon} alt="" />
 					</div>
 

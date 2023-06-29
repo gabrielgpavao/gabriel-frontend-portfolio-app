@@ -21,13 +21,13 @@ export function About ({ id }: iIdProps): JSX.Element {
 
 					<div>
 						<p>
-							Olá! Meu nome é Gabriel Pavão, e sou um Desenvolvedor Front End com 1 ano de experiência em executar soluções web de alta qualidade e performance.
+							Olá! Meu nome é Gabriel Pavão, e sou um Desenvolvedor Full Stack com 1 ano de experiência em executar soluções web de alta qualidade e performance.
 						</p>
 						<p>
-							Ajudo empresas a criarem sites visualmente envolventes e amigáveis ao usuário, para que possam cultivar a fidelidade do cliente para com a empresa, construir uma significativa presença online e aumentar suas taxas de engajamento; além de também preservar a credibilidade da companhia e impulsionar o crescimento de seus negócios.
+							Ajudo empresas a criarem aplicações web excepcionais ao usuário, ágeis e funcionais, para que possam cultivar a fidelidade do cliente para com a empresa e construir uma significativa presença online.
 						</p>
 						<p>
-							Como? Por meio da montagem de interfaces intuitivas, elaboração de páginas responsivas, animações dinâmicas e lógica de programação, a fim de garantir que os usuários aproveitem ao máximo o seu contato com o site.
+							Portanto, que mais me entusiasma é o desafio de criar soluções web para diferentes regras de negócio de maneira harmoniosa.
 						</p>
 						<p>
 							<span>Então, que tal desenvolvermos algo incrível juntos?</span>
