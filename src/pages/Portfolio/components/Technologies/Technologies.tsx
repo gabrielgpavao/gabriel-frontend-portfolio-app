@@ -29,8 +29,10 @@ export function Technologies (): JSX.Element {
 				loop={0}
 				speed={80}
 				pauseOnHover
+				pauseOnClick={false}
 				gradient
 				gradientColor={[1, 24, 37]}
+				gradientWidth={100}
 			>
 				<div className='techList'>
 					<FaReact size={38} color='#61dafb' title={'React.js'}/>
