@@ -19,12 +19,12 @@ export function Home({ id }: iIdProps): JSX.Element {
 						<h2>
 							Desenvolvedor 
 							<span>
-								Front 
+								Full
 								<div>
 									<span>&#x0007B; Think, Code, Release &#x0007D;</span>
 									<span className='hyphen'></span>
 								</div>
-								End
+								Stack
 							</span>
 						</h2>
 						<p>Transformando códigos em soluções digitais personalizadas, a fim de atender as necessidades específicas da sua empresa e de seus clientes.</p>

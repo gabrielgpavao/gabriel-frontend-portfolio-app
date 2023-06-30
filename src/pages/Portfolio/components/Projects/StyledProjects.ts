@@ -28,7 +28,7 @@ export const StyledProjects = styled.section`
 		padding-top: 20px;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
-		grid-gap: 25px;
+		grid-gap: 24px;
 		overflow: overlay;
 	}
 	
@@ -57,7 +57,17 @@ export const StyledProjects = styled.section`
 		}
 	}
 
+	@media (max-width: 435px) {
+		h2 {
+			margin-top: 50px;
+		}
+	}
+	
 	@media (max-width: 400px) {
+		h2 {
+			margin-top: 100px;
+		}
+		
 		ul {
 			grid-template-columns: repeat(1, 1fr);
 			place-items: center;

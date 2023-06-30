@@ -31,6 +31,23 @@ export const GlobalStyles = createGlobalStyle`
 		color: #ffffff;
 	}
 
+	body::-webkit-scrollbar {
+		width: 12px;
+	}
+	
+	body::-webkit-scrollbar-track {
+		background: var(--blue1);
+	}
+
+	body::-webkit-scrollbar-thumb {
+		background-color: var(--orange2);
+		border-radius: 20px;
+	}
+	
+	body::-webkit-scrollbar-thumb:hover {
+		background-color: var(--orange1);
+	}
+	
     a {
         text-decoration: none;
 		color: var(--blue5)
@@ -39,6 +56,14 @@ export const GlobalStyles = createGlobalStyle`
     button {
         cursor: pointer;
     }
+	
+	html {
+		scroll-behavior: smooth;
+	}
+
+	.flexLayout {
+		display: flex;
+	}
 	
 	:root {
 		--blue1: #011825;
@@ -49,13 +74,5 @@ export const GlobalStyles = createGlobalStyle`
 		--blue6: #ceecff;
 		--orange1: #ff7a01;
 		--orange2: #ff9432;
-	}
-
-	.flexLayout {
-		display: flex;
-	}
-
-	html {
-		scroll-behavior: smooth;
 	}
 `
